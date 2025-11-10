@@ -1,22 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learning/mainscreen.dart';
 import 'package:flutter_learning/profile/first_screen.dart';
+import 'package:flutter_learning/profile/second_screen.dart';
 
 void main() {
-  runApp(const flutter_learning());
+  runApp(const Flutter_Learning());
 }
 
-class flutter_learning extends StatelessWidget {
-  const flutter_learning({super.key});
+class Flutter_Learning extends StatelessWidget {
+  const Flutter_Learning({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: "Practice App",
       theme: ThemeData(
         useMaterial3: true,
         scaffoldBackgroundColor:const Color(0xFFF7F7F7),
       ),
-      home: const FirstProfileScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const Mainscreen(),
+        '/profile1': (context) => const FirstProfileScreen(),
+        '/profile2': (context) => const SecondProfileScreen(),
+      },
     );
   }
 }
