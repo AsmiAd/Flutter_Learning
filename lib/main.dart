@@ -4,11 +4,11 @@ import 'package:flutter_learning/profile/first_screen.dart';
 import 'package:flutter_learning/profile/second_screen.dart';
 
 void main() {
-  runApp(const Flutter_Learning());
+  runApp(const FlutterLearning());
 }
 
-class Flutter_Learning extends StatelessWidget {
-  const Flutter_Learning({super.key});
+class FlutterLearning extends StatelessWidget {
+  const FlutterLearning({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class Flutter_Learning extends StatelessWidget {
       title: "Practice App",
       theme: ThemeData(
         useMaterial3: true,
-        scaffoldBackgroundColor:const Color(0xFFF7F7F7),
+        scaffoldBackgroundColor: const Color(0xFFF7F7F7),
       ),
       initialRoute: '/',
       routes: {
@@ -28,7 +28,3 @@ class Flutter_Learning extends StatelessWidget {
     );
   }
 }
-
-
-
-  
