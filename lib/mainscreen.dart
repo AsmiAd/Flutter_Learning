@@ -29,6 +29,22 @@ class Mainscreen extends StatelessWidget {
             child: const Text('Go to Profile Screen 2'),
           ),
 
+          SizedBox(height: 20),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/login');
+            }, 
+            child: const Text('Go to Login Screen'),
+          ),
+
+          SizedBox(height: 20),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/register');
+            }, 
+            child: const Text('Go to Registration Screen'),
+          ),
+
         ],
       ),
     );
